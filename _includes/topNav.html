@@ -42,7 +42,7 @@
             <div>
                 {% include languageSwitcher.html %}
                 <button class="languageSwitchButton" title="{{ locale.site_change_language }}" onclick="document.querySelector('.languageSwitcherDialog').showModal()">
-                    <img src="/assets/img/monochrome/language.svg" alt="{{ locale.site_change_language_alt }}" />
+                    <img src="{{ '/assets/img/monochrome/language.svg' | relative_url }}" alt="{{ locale.site_change_language_alt }}" />
                 </button>
             </div>
         </div>

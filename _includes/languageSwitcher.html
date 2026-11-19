@@ -5,7 +5,7 @@
     </div>
     <div class="languageList">
         {% for locale in site.localization.locales_set %}
-            <a href="/{% if locale[0] != "en" %}{{ locale[0] }}/{% endif %}">{{ locale[1].name }}</a>
+            <a href="{{ '/' | relative_url }}{% if locale[0] != "en" %}{{ locale[0] }}/{% endif %}">{{ locale[1].name }}</a>
         {% endfor %}
     </div>
 </dialog>

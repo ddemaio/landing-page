@@ -13,7 +13,7 @@ layout: default
           <div class="introPrimaryDescription">{{ locale.homepage_intro_subtitle }}</div>
         </div>
         <div class="screenshot">
-          <img width="600" height="374" src="/assets/img/screenshots/kde-welcome.png" alt="{{ locale.homepage_screenshot_alttext }}">
+          <img width="600" height="374" src="{{ '/assets/img/screenshots/kde-welcome.png' | relative_url }}" alt="{{ locale.homepage_screenshot_alttext }}">
           <script>
             const imgElement = document.querySelector('.screenshot img');
             const desktopEnvironments = ['kde', 'gnome', 'xfce'];
