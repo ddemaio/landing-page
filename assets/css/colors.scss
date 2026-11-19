@@ -1,14 +1,32 @@
-$background-light: #ecfff8;
-$foreground1-light: #0c322c;
-$foreground2-light: #123f38;
-$foreground3-light: #0F4030;  // Same color as filter below
-$topnav-foreground-filter-light: invert(14%) sepia(14%) saturate(5295%) hue-rotate(137deg) brightness(97%) contrast(88%);
+// openSUSE project brand palette (https://douglasdemaio.github.io/opensuse-branding/)
+$pine: #173F4F;        // primary brand dark
+$geeko: #42CD42;       // signal color, buttons and fills
+$geeko-deep: #1B7F36;  // green for text on light backgrounds
+$geeko-ink: #0B2A12;   // text on Geeko Green
+$jade: #0E7C6B;        // links on light backgrounds
+$teal: #20CAA3;        // links on dark backgrounds
+$bagel: #FFF8EE;       // warm paper and text on dark surfaces
+$ink: #0F2A35;         // body text on light
+$slate: #516F7B;       // secondary text on light
+$fog: #C5CFD3;         // borders, dividers, muted text on Pine
+$mist: #EEF3F4;        // light page background and cards
 
-$background-dark: #0c322c;
-$foreground1-dark: #ccedea;
-$foreground2-dark: #bfe8e1;
-$foreground3-dark: #A5C7C3;  // Same color as filter below
-$topnav-foreground-filter-dark: invert(86%) sepia(28%) saturate(185%) hue-rotate(124deg) brightness(85%) contrast(92%);
+// Legacy variables used across the stylesheets, now mapped to the brand palette
+$background-light: $mist;
+$foreground1-light: $ink;
+$foreground2-light: $pine;
+$foreground3-light: $jade;
+$topnav-foreground-filter-light: brightness(0) saturate(100%) invert(39%) sepia(75%) saturate(611%) hue-rotate(121deg) brightness(79%) contrast(77%);
+
+$background-dark: $pine;
+$foreground1-dark: $bagel;
+$foreground2-dark: $bagel;
+$foreground3-dark: $geeko;
+$topnav-foreground-filter-dark: brightness(0) saturate(100%) invert(75%) sepia(16%) saturate(854%) hue-rotate(-44deg) brightness(169%) contrast(69%);
+
+// Recolored monochrome artwork
+$icon-filter-light: $topnav-foreground-filter-light;
+$icon-filter-dark: $topnav-foreground-filter-dark;
 
 @mixin dark {
     @media screen and (prefers-color-scheme: dark) {

@@ -1,23 +1,6 @@
-@font-face {
-    font-family: Poppins;
-    font-weight: normal;
-    src: url(/assets/fonts/Poppins-Regular.ttf);
-}
-
-@font-face {
-    font-family: Poppins;
-    font-weight: bold;
-    src: url(/assets/fonts/Poppins-Bold.ttf);
-}
-
-@font-face {
-    font-family: "Source Sans";
-    font-weight: normal;
-    src: url(/assets/fonts/SourceSans3-Regular.ttf);
-}
-
-@font-face {
-    font-family: "Source Sans";
-    font-weight: bold;
-    src: url(/assets/fonts/SourceSans3-Bold.ttf);
-}
+// openSUSE project typography: SUSE (Google Fonts) is loaded in _includes/head.html
+$font-body: "SUSE", sans-serif;
+$font-display: "SUSE", sans-serif;
+$weight-body: 400;
+$weight-heading: 600;
+$weight-display: 300;
