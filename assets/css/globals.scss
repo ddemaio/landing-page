@@ -47,11 +47,7 @@ a {
 .description a,
 .flavorsFineprint a,
 .languageList a {
-    color: colors.$jade;
-
-    @include colors.dark {
-        color: colors.$teal;
-    }
+    color: colors.$geeko;
 }
 
 .highlightBar {
@@ -303,7 +299,7 @@ a {
                         align-items: center;
                         gap: 0.5rem;
                         width: max-content;
-                        color: colors.$teal;
+                        color: colors.$geeko;
 
                         &:hover {
                             color: colors.$bagel;
@@ -337,7 +333,7 @@ a {
                 a {
                     display: flex;
                     align-items: center;
-                    color: colors.$teal;
+                    color: colors.$geeko;
 
                     &:hover {
                         color: colors.$bagel;
